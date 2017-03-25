@@ -11,7 +11,6 @@ export default class SearchBar extends React.Component{
                 <input type="text"/>
                 <input type="checkbox"/>
             </div>
-        )
+        );
     }
-
-}//SearchBar
+}

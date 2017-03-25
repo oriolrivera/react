@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 
 import FilterableProductTable from "./components/FilterableProductTable.js"
 
-const db = [
+let db = [
     {category:"Sporting goods", price:"$49.99",stocked:true, name:"Football"},
     {category:"Sporting goods", price:"$9.99",stocked:true, name:"Baseball"},
     {category:"Sporting goods", price:"29.99",stocked:false, name:"Basketball"},
@@ -13,4 +13,4 @@ const db = [
 ]
 
 const app = document.getElementById("app")
-ReactDOM.render(<FilterableProductTable/>, app)
+ReactDOM.render(<FilterableProductTable store={db} />, app)
